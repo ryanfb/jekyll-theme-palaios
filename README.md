@@ -58,6 +58,8 @@ owner:
   gravatar_url: http://www.gravatar.com/avatar/5c60848658ff9b47c42196635fe0449b.jpg
 ```
 
+You can also set `donation_url` to link to a suggested donations page.
+
 ### Post Features
 
 * Set `affiliate: true` to add an affiliate link disclosure at the top of a page
