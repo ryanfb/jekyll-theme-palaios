@@ -24,6 +24,16 @@ Or install it yourself as:
 
     $ gem install jekyll-theme-palaios
 
+## Features
+
+* Nice, locally-hosted Google Fonts: EB Garamond for prose, Inconsolata for code
+* Twitter cards
+* CoINS metadata for posts
+* Pingbacks/Webmentions through [webmention.io](https://webmention.io/)
+* [FontAwesome](https://fontawesome.com/) (5.13.0)
+* Last-modified dates on posts via JavaScript
+* Suggested citations
+
 ## Usage
 
 This theme requires some author/citation metadata config variables to be set at the `site` level in your `_config.yml`, e.g.:
@@ -38,6 +48,11 @@ owner:
   twitter: ryanfb
   gravatar_url: http://www.gravatar.com/avatar/5c60848658ff9b47c42196635fe0449b.jpg
 ```
+
+### Post Features
+
+* Set `affiliate: true` to add an affiliate link disclosure at the top of a page
+* Set `external_url: https://example.com` to have a page redirect to an external link
 
 ## Contributing
 
