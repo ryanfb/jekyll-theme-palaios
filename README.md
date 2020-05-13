@@ -48,7 +48,6 @@ remote_theme: ryanfb/jekyll-theme-palaios
 This theme requires some author/citation metadata config variables to be set at the `site` level in your `_config.yml`, e.g.:
 
 ```
-citation_type: blog
 owner:
   name: Ryan Baumann
   first_name: Ryan
@@ -58,7 +57,8 @@ owner:
   gravatar_url: http://www.gravatar.com/avatar/5c60848658ff9b47c42196635fe0449b.jpg
 ```
 
-You can also set `donation_url` to link to a suggested donations page.
+* Set `donation_url` to link to a suggested donations page.
+* Set e.g. `citation_type: blog` to have it parenthesized in suggested citations.
 
 ### Post Features
 
