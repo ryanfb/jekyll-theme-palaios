@@ -61,6 +61,8 @@ owner:
 * Set `donation_url` to link to a suggested donations page.
 * Set e.g. `citation_type: blog` to have it parenthesized in suggested citations.
 
+If your CSS isn't loading, you may need to force `site.url` to be the HTTPS URL for your domain.
+
 ### Post Features
 
 * Set `affiliate: true` to add an affiliate link disclosure at the top of a page
