@@ -26,7 +26,18 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+This theme requires some author/citation metadata config variables to be set at the `site` level in your `_config.yml`, e.g.:
+
+```
+citation_type: blog
+owner:
+  name: Ryan Baumann
+  first_name: Ryan
+  last_name: Baumann
+  email: ryan.baumann@gmail.com
+  twitter: ryanfb
+  gravatar_url: http://www.gravatar.com/avatar/5c60848658ff9b47c42196635fe0449b.jpg
+```
 
 ## Contributing
 
