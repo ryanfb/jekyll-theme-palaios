@@ -24,6 +24,14 @@ Or install it yourself as:
 
     $ gem install jekyll-theme-palaios
 
+OR use on GitHub Pages by using this in your `_config.yml`:
+
+```
+plugins:
+  - jekyll-remote-theme
+remote_theme: ryanfb/jekyll-theme-palaios
+```
+
 ## Features
 
 * Nice, locally-hosted Google Fonts: EB Garamond for prose, Inconsolata for code
