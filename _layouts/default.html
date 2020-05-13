@@ -52,8 +52,8 @@
   {% if page.date %}<!-- Enable COinS -->
   <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.title={{ page.title | cgi_escape }}&amp;rft.aulast={{ site.owner.last_name | cgi_escape }}&amp;rft.aufirst={{ site.owner.first_name | cgi_escape }}&amp;rft.source={{ site.title | cgi_escape }}&amp;rft.date={{ page.date | date_to_xmlschema }}&amp;rft.type=blogPost&amp;rft.format=text&amp;rft.identifier={{ site.url | cgi_escape }}{{ site.baseurl | cgi_escape }}{{ page.url | cgi_escape }}&amp;rft.language=English"></span>{% endif %}
   <div class="header">
-    <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a><span style="float:right"><a href="{{ site.url }}" rel="author">{{ site.github.owner_name }}.github.io</a></span></h1>
-    {% unless page.title == 'index' %}{% if page.title %}<div class="title"><h2>↳ <a href="{{ site.baseurl }}{{ page.url }}" rel="bookmark">{{ page.title}}</a></h2></div>{% endif %}{% endunless %}
+    {% unless page.no_header %}<h1><a href="{{ site.baseurl }}/">{{ site.title }}</a><span style="float:right"><a href="{{ site.url }}" rel="author">{{ site.github.owner_name }}.github.io</a></span></h1>
+    {% unless page.title == 'index' %}{% if page.title %}<div class="title"><h2>↳ <a href="{{ site.baseurl }}{{ page.url }}" rel="bookmark">{{ page.title}}</a></h2></div>{% endif %}{% endunless %}{% endunless %}
     <div class="subhead">
       {% if page.tags.size > 0 %}<span>tags: {% for tag in page.tags %}<a href="{{ site.baseurl }}/tags/{{ tag }}.html">{{ tag }}</a>{% if forloop.last %}{% else %}, {% endif %}{% endfor %}</span><br/>{% endif %}
       {% if page.date %}

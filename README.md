@@ -53,6 +53,7 @@ owner:
 
 * Set `affiliate: true` to add an affiliate link disclosure at the top of a page
 * Set `external_url: https://example.com` to have a page redirect to an external link
+* Set `no_header: true` to suppress the header
 
 ## Contributing
 
