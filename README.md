@@ -33,6 +33,7 @@ Or install it yourself as:
 * [FontAwesome](https://fontawesome.com/) (5.13.0)
 * Last-modified dates on posts via JavaScript
 * Suggested citations
+* RSS Feed
 
 ## Usage
 
