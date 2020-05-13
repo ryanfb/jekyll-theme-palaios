@@ -37,7 +37,7 @@ remote_theme: ryanfb/jekyll-theme-palaios
 
 * Nice, locally-hosted Google Fonts: EB Garamond for prose, Inconsolata for code
 * Twitter cards
-* CoINS metadata for posts
+* COinS metadata for posts (makes e.g. Zotero work automatically)
 * Pingbacks/Webmentions through [webmention.io](https://webmention.io/)
 * [FontAwesome](https://fontawesome.com/) (5.13.0)
 * Last-modified dates on posts via JavaScript
