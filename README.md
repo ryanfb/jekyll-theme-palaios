@@ -1,6 +1,6 @@
 # jekyll-theme-palaios
 
-A simple, elegant, archaizing theme for beautiful plain text.
+A simple, elegant, archaizing Jekyll theme for beautiful plain text.
 
 ## Installation
 
