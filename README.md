@@ -29,6 +29,7 @@ OR use on GitHub Pages by using this in your `_config.yml`:
 ```
 plugins:
   - jekyll-remote-theme
+  - jekyll-github-metadata
 remote_theme: ryanfb/jekyll-theme-palaios
 ```
 
