@@ -2,6 +2,10 @@
 
 A simple, elegant, archaizing Jekyll theme for beautiful plain text.
 
+## Screenshot
+
+![A screenshot of a sample post using this theme](screenshot.png?raw=true "Screenshot")
+
 ## Installation
 
 Add this line to your Jekyll site's `Gemfile`:
