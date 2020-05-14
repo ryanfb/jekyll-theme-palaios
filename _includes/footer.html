@@ -2,8 +2,8 @@
 <hr>
 <div class="footer">
 <div class="metadata">
-<span class="left">Originally published on {{ page.date | date: "%Y-%m-%d" }} by <a href="{{ site.url }}">{{ site.author.name }}</a></span>
-<span class="right">Feedback? <a href="mailto:{{ site.author.email }}">e-mail</a> / <a href="https://twitter.com/intent/tweet?text=%40{{ site.author.twitter }}%20">twitter</a> / <a href="{{ site.github.issues_url }}">github</a></span>
+<span class="left">Originally published on {{ page.date | date: "%Y-%m-%d" }}{% if site.author.name %} by <a href="{{ site.url }}">{{ site.author.name }}</a>{% endif %}</span>
+<span class="right">Feedback? {% if site.author.email %}<a href="mailto:{{ site.author.email }}">e-mail</a> / {% endif %}{% if site.author.twitter %}<a href="https://twitter.com/intent/tweet?text=%40{{ site.author.twitter }}%20">twitter</a> / {% endif %}<a href="{{ site.github.issues_url }}">github</a></span>
 <br/>
 <span class="left"><a href="{{ site.github.repository_url }}/commits/{{ site.github.source.branch }}/{{ page.path }}">Revision History</a> / <a href="https://www.followthatpage.com/referrer">Follow This Page</a></span>
 {% if site.donation_url %}<span class="right"><a href="{{ site.donation_url }}">Appreciate this post? Please consider giving back.</a></span>{% endif %}
