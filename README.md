@@ -36,26 +36,25 @@ remote_theme: ryanfb/jekyll-theme-palaios
 ## Features
 
 * Nice, locally-hosted Google Fonts: EB Garamond for prose, Inconsolata for code
-* Twitter cards
 * COinS metadata for posts (makes e.g. Zotero work automatically)
 * Pingbacks/Webmentions through [webmention.io](https://webmention.io/)
 * [FontAwesome](https://fontawesome.com/) (5.13.0)
 * Last-modified dates on posts via JavaScript
 * Suggested citations
 * RSS Feed
+* [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag) - see docs there for configuring Twitter card images, etc.
 
 ## Usage
 
 This theme requires some author/citation metadata config variables to be set at the `site` level in your `_config.yml`, e.g.:
 
 ```
-owner:
+author:
   name: Ryan Baumann
   first_name: Ryan
   last_name: Baumann
   email: ryan.baumann@gmail.com
   twitter: ryanfb
-  gravatar_url: http://www.gravatar.com/avatar/5c60848658ff9b47c42196635fe0449b.jpg
 ```
 
 * Set `donation_url` to link to a suggested donations page.

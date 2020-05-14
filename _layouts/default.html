@@ -1,20 +1,11 @@
 <!doctype html>
 <html lang="en" itemscope itemtype="http://schema.org/WebPage" itemid="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
 <head>
-  <meta charset="utf-8">
+<meta charset="utf-8">
+{% seo %}
   {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%Y-%m-%d" }}">{% endif %}
-  <title>{{ site.owner.name }} - {{ site.title }} - {{ page.title }}</title>
+  <meta name="author" content="{{ site.author.name }}">
   <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.url }}{{ site.baseurl }}/assets/feed.xml">
-  <meta name="description" content="{{ site.description }}">
-  <meta name="author" content="{{ site.owner.name }}">
-  <!-- Enables twitter cards on posts -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@{{ site.owner.twitter }}" />
-  <meta name="twitter:creator" content="@{{ site.owner.twitter }}" />
-  <meta name="twitter:title" content="{{ page.title }}" />
-  <meta name="twitter:description" content="{{ page.excerpt | escape }}" />
-  <meta name="twitter:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
-  <meta name="twitter:image" content="{{ site.owner.gravatar_url }}" />
   {% if page.external_url %}<meta http-equiv="refresh" content="0; {{ page.external_url }}" />{% endif %}
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
   <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/site.css">
@@ -50,7 +41,7 @@
 <body onload="setModifiedDate(); setAccessedDate();">
   <div id="content">
   {% if page.date %}<!-- Enable COinS -->
-  <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc{% if page.title %}&amp;rft.title={{ page.title | cgi_escape }}{% endif %}{% if site.owner.last_name %}&amp;rft.aulast={{ site.owner.last_name | cgi_escape }}{% endif %}{% if site.owner.first_name %}&amp;rft.aufirst={{ site.owner.first_name | cgi_escape }}{% endif %}&amp;rft.source={{ site.title | cgi_escape }}&amp;rft.date={{ page.date | date_to_xmlschema }}&amp;rft.type=blogPost&amp;rft.format=text&amp;rft.identifier={% if site.url %}{{ site.url | cgi_escape }}{% endif %}{% if site.baseurl %}{{ site.baseurl | cgi_escape }}{% endif %}{% if page.url %}{{ page.url | cgi_escape }}{% endif %}&amp;rft.language=English"></span>{% endif %}
+  <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc{% if page.title %}&amp;rft.title={{ page.title | cgi_escape }}{% endif %}{% if site.author.last_name %}&amp;rft.aulast={{ site.author.last_name | cgi_escape }}{% endif %}{% if site.author.first_name %}&amp;rft.aufirst={{ site.author.first_name | cgi_escape }}{% endif %}&amp;rft.source={{ site.title | cgi_escape }}&amp;rft.date={{ page.date | date_to_xmlschema }}&amp;rft.type=blogPost&amp;rft.format=text&amp;rft.identifier={% if site.url %}{{ site.url | cgi_escape }}{% endif %}{% if site.baseurl %}{{ site.baseurl | cgi_escape }}{% endif %}{% if page.url %}{{ page.url | cgi_escape }}{% endif %}&amp;rft.language=English"></span>{% endif %}
   <div class="header">
     {% unless page.no_header %}<h1><a href="{{ site.baseurl }}/">{{ site.title }}</a><span style="float:right"><a href="{{ site.url }}" rel="author">{{ site.github.owner_name }}.github.io</a></span></h1>
     {% unless page.title == 'index' %}{% if page.title %}<div class="title"><h2>↳ <a href="{{ site.baseurl }}{{ page.url }}" rel="bookmark">{{ page.title}}</a></h2></div>{% endif %}{% endunless %}{% endunless %}
@@ -58,11 +49,11 @@
       {% if page.tags.size > 0 %}<span>tags: {% for tag in page.tags %}<a href="{{ site.baseurl }}/tags/{{ tag }}.html">{{ tag }}</a>{% if forloop.last %}{% else %}, {% endif %}{% endfor %}</span><br/>{% endif %}
       {% if page.date %}
       <span>Originally Published: {{ page.date | date: "%Y-%m-%d" }}</span><br/>
-      <span id='last-modified'/>
+      <span id='last-modified'></span>
       {% endif %}
     </div>
   </div>
-  <div class="clear"/>
+  <div class="clear"></div>
   {% if page.affiliate %}
   <span><i>Disclosure: This post contains links to buy products.<br/>If you purchase products by clicking those links, I may earn an affiliate commission.</i></span>
   {% endif %}
