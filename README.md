@@ -47,6 +47,7 @@ remote_theme: ryanfb/jekyll-theme-palaios
 * Suggested citations
 * RSS Feed
 * [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag) - see docs there for configuring Twitter card images, etc.
+* CC license tags, defaulting to CC BY 4.0 - can set `site.license` or `page.license` to `CC0` or `CC BY`
 
 ## Usage
 
