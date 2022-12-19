@@ -43,7 +43,7 @@
   {% if page.date %}<!-- Enable COinS -->
   <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc{% if page.title %}&amp;rft.title={{ page.title | cgi_escape }}{% endif %}{% if site.author.last_name %}&amp;rft.aulast={{ site.author.last_name | cgi_escape }}{% endif %}{% if site.author.first_name %}&amp;rft.aufirst={{ site.author.first_name | cgi_escape }}{% endif %}&amp;rft.source={{ site.title | cgi_escape }}&amp;rft.date={{ page.date | date_to_xmlschema }}&amp;rft.type=blogPost&amp;rft.format=text&amp;rft.identifier={% if site.url %}{{ site.url | cgi_escape }}{% endif %}{% if site.baseurl %}{{ site.baseurl | cgi_escape }}{% endif %}{% if page.url %}{{ page.url | cgi_escape }}{% endif %}&amp;rft.language=English"></span>{% endif %}
   <div class="header">
-    {% unless page.no_header %}<h1><a href="{{ site.baseurl }}/">{{ site.title }}</a><span style="float:right"><a href="{{ site.url }}" rel="author">{{ site.url }}</a></span></h1>
+    {% unless page.no_header %}<h1><a href="{{ site.baseurl }}/">{{ site.title }}</a><span style="float:right"><a href="{{ site.url }}" rel="author">{{ site.url | remove_first: "https://" }}</a></span></h1>
     {% unless page.title == 'index' %}{% if page.title %}<div class="title"><h2>↳ <a href="{{ site.baseurl }}{{ page.url }}" rel="bookmark">{{ page.title}}</a></h2></div>{% endif %}{% endunless %}{% endunless %}
     <div class="subhead">
       {% if page.tags.size > 0 %}<span>tags: {% for tag in page.tags %}<a href="{{ site.baseurl }}/tags/{{ tag }}.html">{{ tag }}</a>{% if forloop.last %}{% else %}, {% endif %}{% endfor %}</span><br/>{% endif %}
