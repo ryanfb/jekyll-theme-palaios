@@ -39,7 +39,7 @@ remote_theme: ryanfb/jekyll-theme-palaios
 
 ## Features
 
-* Nice, locally-hosted Google Fonts: EB Garamond for prose, Inconsolata for code
+* [Modern Font Stacks](https://modernfontstacks.com/) for text: Old Style for prose, Monospace Code for code
 * COinS metadata for posts (makes e.g. Zotero work automatically)
 * Pingbacks/Webmentions through [webmention.io](https://webmention.io/)
 * [FontAwesome](https://fontawesome.com/) (6)
