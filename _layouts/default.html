@@ -13,6 +13,7 @@
   <link rel="pingback" href="https://webmention.io/{{ site.github.owner_name }}.github.io/xmlrpc" />
   <link rel="webmention" href="https://webmention.io/{{ site.github.owner_name }}.github.io/webmention" />
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  {% if site.author.link %}<link rel="me" href="{{ site.author.link }}">{% endif %}
   <script type="text/javascript">
     function setAccessedDate() {
       if (document.getElementById('accessed-on')) {
