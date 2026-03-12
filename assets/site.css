@@ -165,6 +165,9 @@ time {
 .subhead a {
   color: gray;
 }
+.right {
+  margin-left: 1em;
+}
 .clear {
   clear: both;
 }
